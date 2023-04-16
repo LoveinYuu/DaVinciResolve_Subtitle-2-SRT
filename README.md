@@ -1,9 +1,9 @@
 # DaVinci Resolve Subtitle Export SRT Tool
 ___
 ## Function
-This plugin can help you automatically export subtitles on the timeline as SRT files in batches, so you don't have to work overtime for this kind of mechanical work. Leave it all to your computer after work (let it work hard).
+This plugin can help you automatically export subtitles on the timeline as SRT files in batches, so you don't have to work overtime for this kind of mechanical work. Leave it all to your computer after work.
 ## Instructions
-A very simple little tool that can read the contents of subtitle track 1 and export SRT. Currently supports 24 frames and 25 frames of timeline.
+A very simple tool that can read the contents of subtitle track 1 and export SRT. Currently supports 24 frames and 25 frames of timeline.
     
 ![01_Script Shot](assets/01_Script%20Shot.png)
 
@@ -23,13 +23,13 @@ A very simple little tool that can read the contents of subtitle track 1 and exp
 
     ![05_NameAs](assets/05_NameAs.png)
 
-* You can add prefixes and suffixes to your SRT, although you can also add them all in Finder, but... isn't this more convenient?
+* You can add prefixes and suffixes to your SRT
     > For example, the prefix can add the project name and version number, and the suffix can add today's date. For example: **ProjectName_C01_EP01_230416**
     
     ![06_Prefix](assets/06_Prefix.png)
 
 ### Export
-Click `「选择路径」`, or directly paste the path into the dialog box below, and click export
+Click `「选择路径」`, or directly paste the path into the dialog box below, and click `「导出」`
 * Clicking the `「导出」` button will automatically save the current project
 * After the export is completed, the `「导出」` button will become **unselectable** to avoid accidentally running it again (it takes a long time to open a project with 40 episodes). Changing any other settings can refresh the `「导出」` button
 
@@ -49,6 +49,7 @@ Click `「选择路径」`, or directly paste the path into the dialog box below
 
 ## Known issues
 * There may be a 1ms error when exporting SRT on a 25-frame timeline. It is not clear how DaVinci Resolve calculates time codes like 00:00:00,959, but it does not affect normal use.
+
     `Test method: Use a 30-minute project and export SRT using the script. Then insert the SRT back into the project. The cut points and subtitle block content are consistent with the original subtitles.`
     
     ![11_Conform](assets/11_Conform.png)
