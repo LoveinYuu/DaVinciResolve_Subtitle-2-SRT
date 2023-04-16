@@ -9,11 +9,13 @@ A very simple little tool that can read the contents of subtitle track 1 and exp
 
 ### Range Selection
 * When selecting `「目录内所有工程」` on the left, it will export all projects in the folder where the current project in the project manager is located, excluding **subfolders**
+
     ![02_AllProj](assets/02_AllProj.png)
     ![03_pjM](assets/03_pjM.png)
 
 * When selecting `「所有时间线」` on the right, it will export all timelines in the project, and **disabled timelines** will not be exported
-![04_Disabled TL](assets/04_Disabled%20TL.png)
+
+    ![04_Disabled TL](assets/04_Disabled%20TL.png)
 
 ### File Naming
 * There are two ways to name the file, `「以时间线名称」` and `「以工程名称」`, and a **real-time name preview** will be given below
@@ -40,7 +42,8 @@ Click `「选择路径」`, or directly paste the path into the dialog box below
 * If there are no subtitles on some timelines, it will prompt **有失败项**, open the console to view the error message
 
     ![09_OutputErr](assets/09_OutputErr.png)
-![10_Console](assets/10_Console.png)
+
+    ![10_Console](assets/10_Console.png)
 
 
 
@@ -56,6 +59,7 @@ Click `「选择路径」`, or directly paste the path into the dialog box below
 > * This plugin is developed based on **DaVinci Resolve 17** and has not been tested on **DaVinci Resolve 18**
 ## Finally
 Hope u like it!
+
 ![12_Donate](assets/12_Donate.jpg)
 
 
